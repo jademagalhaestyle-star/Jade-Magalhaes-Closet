@@ -1,227 +1,24 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closet da Jade Magalhães | Fã-Site Premium de Moda</title>
-    <meta name="description" content="Explore o estilo, looks e a trajetória de Jade Magalhães. Um fã-site premium dedicado ao guarda-roupa e inspirações de moda.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body class="light-mode">
+Crie um site completo em HTML, CSS e JavaScript chamado "Closet da Jade Magalhães".
 
-    <div class="theme-toggle" id="themeToggle" title="Alternar tema">
-        <i class="fas fa-moon"></i>
-    </div>
+O site deve ser moderno, elegante, responsivo e funcionar perfeitamente no GitHub Pages.
 
-    <button id="backToTop" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+Inclua:
 
-    <header class="main-header">
-        <div class="header-container">
-            <a href="#" class="logo">CLOSET DA JADE</a>
-            
-            <nav class="navbar" id="navbar">
-                <a href="#inicio" class="nav-link active">Início</a>
-                <a href="#looks" class="nav-link">Looks</a>
-                <a href="#galeria" class="nav-link">Galeria</a>
-                <a href="#noticias" class="nav-link">Notícias</a>
-                <a href="#sobre" class="nav-link">Sobre</a>
-                <a href="#contato" class="nav-link">Contato</a>
-            </nav>
+- Página inicial com um banner bonito.
+- Menu com: Início, Looks, Galeria, Notícias, Sobre e Contato.
+- Seção "Looks da Jade" com cartões contendo foto, descrição, marca da roupa, cor e ocasião.
+- Galeria de fotos organizada em grade.
+- Notícias e atualizações.
+- Linha do tempo com os principais momentos da Jade.
+- Rodapé com links para redes sociais.
+- Botão "Voltar ao topo".
+- Modo claro e modo escuro.
+- Animações suaves ao rolar a página.
+- Campo de pesquisa para encontrar looks.
+- Design nas cores branco, dourado e rosa-claro.
+- Código organizado em index.html, style.css e script.js.
+- Utilize apenas HTML, CSS e JavaScript puro, sem frameworks.
+- O site deve ser otimizado para celular e computador.
+- Adicione comentários explicando cada parte do código.
 
-            <div class="menu-toggle" id="mobileMenu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-
-    <section id="inicio" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content scroll-reveal">
-            <span class="hero-subtitle">Fã-Site Polido & Sofisticado</span>
-            <h1 class="hero-title">O Estilo de Jade Magalhães</h1>
-            <p class="hero-description">Uma curadoria digital inspirada na elegância, minimalismo e alta-costura que definem a presença de Jade.</p>
-            <a href="#looks" class="btn-gold">Explorar Closet</a>
-        </div>
-    </section>
-
-    <section id="looks" class="section-padding">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <h2>Looks da Jade</h2>
-                <p>Explore as peças icônicas, marcas e composições usadas por Jade.</p>
-                
-                <div class="search-container">
-                    <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" placeholder="Pesquise por marca, cor ou ocasião (ex: Casamento, Prada, Rosa)...">
-                </div>
-            </div>
-
-            <div class="looks-grid" id="looksGrid">
-                <div class="look-card scroll-reveal" data-marca="Prada" data-cor="Rosa" data-ocasiao="Desfile de Moda">
-                    <div class="look-img-container">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Look Elegante Rosa">
-                        <span class="look-tag">Alta Costura</span>
-                    </div>
-                    <div class="look-info">
-                        <h3>Monocromático High Fashion</h3>
-                        <p class="look-desc">Um conjunto sofisticado de alfaiataria moderna ideal para semanas de moda internacionais.</p>
-                        <div class="look-details">
-                            <span><strong>Marca:</strong> Prada</span>
-                            <span><strong>Cor:</strong> Rosa-claro</span>
-                            <span><strong>Ocasião:</strong> Desfile</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="look-card scroll-reveal" data-marca="Chanel" data-cor="Branco" data-ocasiao="Gala">
-                    <div class="look-img-container">
-                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80" alt="Vestido de Gala Branco">
-                        <span class="look-tag">Gala</span>
-                    </div>
-                    <div class="look-info">
-                        <h3>Minimalismo Dourado & Branco</h3>
-                        <p class="look-desc">Vestido fluido com detalhes sutis em fios de ouro, unindo leveza e luxo absoluto.</p>
-                        <div class="look-details">
-                            <span><strong>Marca:</strong> Chanel</span>
-                            <span><strong>Cor:</strong> Branco / Dourado</span>
-                            <span><strong>Ocasião:</strong> Gala</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="look-card scroll-reveal" data-marca="Zara" data-cor="Nude" data-ocasiao="Casual">
-                    <div class="look-img-container">
-                        <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=600&q=80" alt="Look Casual Chic">
-                        <span class="look-tag">Street Style</span>
-                    </div>
-                    <div class="look-info">
-                        <h3>Casual Chic Urbano</h3>
-                        <p class="look-desc">Combinação de tons pastéis e terrosos com acessórios marcantes para o dia a dia.</p>
-                        <div class="look-details">
-                            <span><strong>Marca:</strong> Zara / Gucci</span>
-                            <span><strong>Cor:</strong> Nude / Bege</span>
-                            <span><strong>Ocasião:</strong> Casual</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="noResults" class="no-results hidden">Nenhum look encontrado para a sua pesquisa.</div>
-        </div>
-    </section>
-
-    <section id="galeria" class="section-padding bg-light-alt">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <h2>Galeria Visual</h2>
-                <p>Instantes de pura sofisticação capturados em editoriais e eventos.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item item-w2 scroll-reveal"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Foto Galeria 1"></div>
-                <div class="gallery-item scroll-reveal"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80" alt="Foto Galeria 2"></div>
-                <div class="gallery-item scroll-reveal"><img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Foto Galeria 3"></div>
-                <div class="gallery-item item-h2 scroll-reveal"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Foto Galeria 4"></div>
-                <div class="gallery-item item-w2 scroll-reveal"><img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80" alt="Foto Galeria 5"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="noticias" class="section-padding">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <h2>Notícias & Atualizações</h2>
-                <p>Fique por dentro das últimas novidades, parcerias e aparições da Jade.</p>
-            </div>
-            <div class="news-grid">
-                <article class="news-card scroll-reveal">
-                    <div class="news-date">28 Jun, 2026</div>
-                    <h3>Presença Marcante na Semana de Moda de Paris</h3>
-                    <p>Jade encanta críticos internacionais ao surgir com look minimalista ultrafeminino na primeira fileira do desfile...</p>
-                    <a href="#noticias" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
-                </article>
-                <article class="news-card scroll-reveal">
-                    <div class="news-date">15 Jun, 2026</div>
-                    <h3>Nova Colaboração de Joias Exclusiva</h3>
-                    <p>Rumores apontam o desenvolvimento de uma coleção cápsula assinada por Jade com foco em ouro rose e diamantes sustentáveis...</p>
-                    <a href="#noticias" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre" class="section-padding bg-light-alt">
-        <div class="container">
-            <div class="section-header scroll-reveal">
-                <h2>Linha do Tempo</h2>
-                <p>Os marcos mais importantes na trajetória de elegância e sucesso de Jade Magalhães.</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item left scroll-reveal">
-                    <div class="timeline-content">
-                        <span class="timeline-year">2019</span>
-                        <h3>Formação em Moda</h3>
-                        <p>Consolidação de sua base técnica e conceitual, aprimorando seu olhar único para tendências e alta alfaiataria.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right scroll-reveal">
-                    <div class="timeline-content">
-                        <span class="timeline-year">2022</span>
-                        <h3>Ícone Digital de Estilo</h3>
-                        <p>Destaque nas redes sociais, tornando-se referência nacional em produções elegantes, polidas e sofisticadas.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left scroll-reveal">
-                    <div class="timeline-content">
-                        <span class="timeline-year">2026</span>
-                        <h3>Expansão Global</h3>
-                        <p>Reconhecimento internacional através de convites e coberturas especiais nas maiores capitais da moda mundial.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="section-padding">
-        <div class="container max-width-600">
-            <div class="section-header scroll-reveal">
-                <h2>Contato</h2>
-                <p>Dúvidas, sugestões de novos looks ou feedbacks sobre o fã-site? Escreva para nós!</p>
-            </div>
-            <form class="contact-form scroll-reveal" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! (Simulação)');">
-                <div class="form-group">
-                    <input type="text" placeholder="Seu Nome Completo" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Seu Melhor E-mail" required>
-                </div>
-                <div class="form-group">
-                    <textarea rows="5" placeholder="Sua Mensagem..." required></textarea>
-                </div>
-                <button type="submit" class="btn-gold full-width">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p class="footer-logo">CLOSET DA JADE</p>
-            <p class="disclaimer"><strong>Aviso Importante:</strong> Este é um espaço digital feito por fãs dedicado à apreciação estética e de estilo. Não possuímos nenhum vínculo oficial com Jade Magalhães ou sua equipe.</p>
-            
-            <div class="footer-socials">
-                <a href="https://instagram.com" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://pinterest.com" target="_blank" rel="noopener" title="Pinterest"><i class="fab fa-pinterest"></i></a>
-                <a href="https://tiktok.com" target="_blank" rel="noopener" title="TikTok"><i class="fab fa-tiktok"></i></a>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Closet da Jade Magalhães. Desenvolvido com carinho.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+Importante: este é um site de fãs, sem vínculo oficial com Jade Magalhães.
