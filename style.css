@@ -122,3 +122,40 @@ footer{
 html{
     scroll-behavior:smooth;
 }
+#modoEscuro{
+    padding:10px 18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#d4af37;
+    color:white;
+    font-weight:bold;
+}
+
+.pesquisa{
+    text-align:center;
+    margin:40px;
+}
+
+#pesquisa{
+    width:80%;
+    max-width:500px;
+    padding:15px;
+    border-radius:30px;
+    border:1px solid #ddd;
+    font-size:16px;
+}
+
+.dark{
+    background:#1b1b1b;
+    color:white;
+}
+
+.dark header{
+    background:#2b2b2b;
+}
+
+.dark .card{
+    background:#333;
+    color:white;
+}
