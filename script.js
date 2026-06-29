@@ -1,13 +1,24 @@
-console.log("Closet da Jade Magalhães carregado com sucesso! ✨");
+// Botão modo escuro
+const botao = document.getElementById("modoEscuro");
 
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", function(e){
-        e.preventDefault();
+botao.onclick = () => {
+    document.body.classList.toggle("dark");
+};
 
-        const destino = document.querySelector(this.getAttribute("href"));
+// Pesquisa
+const pesquisa = document.getElementById("pesquisa");
 
-        destino.scrollIntoView({
-            behavior:"smooth"
-        });
+pesquisa.addEventListener("keyup", () => {
+
+    const texto = pesquisa.value.toLowerCase();
+
+    document.querySelectorAll(".card").forEach(card=>{
+
+        card.style.display =
+        card.innerText.toLowerCase().includes(texto)
+        ? "block"
+        : "none";
+
     });
+
 });
