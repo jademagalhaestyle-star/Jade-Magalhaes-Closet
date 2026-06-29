@@ -100,3 +100,25 @@ footer{
     padding:30px;
     margin-top:50px;
 }
+#galeria,
+#noticias,
+#sobre{
+    padding:60px 20px;
+}
+
+#galeria h2,
+#noticias h2,
+#sobre h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#d4af37;
+}
+
+#sobre p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+html{
+    scroll-behavior:smooth;
+}
